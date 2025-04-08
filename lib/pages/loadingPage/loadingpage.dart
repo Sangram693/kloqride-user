@@ -340,6 +340,7 @@ class _LoadingPageState extends State<LoadingPage> {
                     top: 0,
                     child: NoInternet(
                       onTap: () {
+                        print("sangram roygupta");
                         setState(() {
                           internetTrue();
                           getLanguageDone();

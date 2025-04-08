@@ -170,6 +170,7 @@ Page resource error:
                     top: 0,
                     child: NoInternet(
                       onTap: () {
+                        print("sangram");
                         setState(() {
                           internetTrue();
                         });

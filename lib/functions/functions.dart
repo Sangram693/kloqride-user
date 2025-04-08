@@ -44,7 +44,7 @@ String packageName = '';
 String signKey = '';
 
 //base url
-String url = 'base url'; //add '/' at the end of the url as 'https://url.com/'
+String url = 'https://kloqride.org/'; //add '/' at the end of the url as 'https://url.com/'
 String mapkey =
     (platform == TargetPlatform.android) ? 'android map key' : 'ios map key';
 
@@ -273,6 +273,7 @@ getCountryCode() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -396,6 +397,7 @@ getLocalData() async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
       internet = false;
     }
   }
@@ -479,6 +481,7 @@ registerUser() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -528,6 +531,7 @@ otpCall() async {
     if (e is SocketException) {
       internet = false;
       result = 'no Internet';
+      print("sangram: $e");
       valueNotifierHome.incrementNotifier();
     }
   }
@@ -655,6 +659,7 @@ updatePassword(email, password, loginby) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -731,6 +736,7 @@ userLogin(number, login, password, isOtp) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -1098,6 +1104,7 @@ geoCoding(double lat, double lng) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -1140,6 +1147,7 @@ getlangid() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -1524,6 +1532,7 @@ getGoodsList() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -1941,6 +1950,7 @@ createRequest(value, api) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
       valueNotifierBook.incrementNotifier();
     }
   }
@@ -1980,6 +1990,7 @@ createRequestLater(val, api) async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
       internet = false;
     }
   }
@@ -2051,6 +2062,7 @@ createRequestLaterPromo() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
 
@@ -2115,6 +2127,7 @@ createRentalRequest() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
       valueNotifierBook.incrementNotifier();
     }
   }
@@ -2178,6 +2191,7 @@ createRentalRequestWithPromo() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -2238,6 +2252,7 @@ createRentalRequestLater() async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
       internet = false;
     }
   }
@@ -2303,6 +2318,7 @@ createRentalRequestLaterPromo() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
 
@@ -2502,6 +2518,7 @@ cancelReason(reason) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -2549,6 +2566,7 @@ userRating() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -2643,6 +2661,7 @@ getSosData(lat, lng) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -2894,6 +2913,7 @@ adminmessageseen() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -2924,6 +2944,7 @@ addSos(name, number) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -2952,6 +2973,7 @@ deleteSos(id) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -2993,6 +3015,7 @@ getFaqData(lat, lng) async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
       internet = false;
     }
   }
@@ -3024,6 +3047,7 @@ getFaqPages(id) async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
       internet = false;
     }
     return result;
@@ -3053,6 +3077,7 @@ removeFavAddress(id) async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
       internet = false;
     }
   }
@@ -3083,6 +3108,7 @@ getReferral() async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
       internet = false;
     }
   }
@@ -3111,6 +3137,7 @@ userLogout() async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
       internet = false;
     }
   }
@@ -3152,6 +3179,7 @@ getHistory() async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
 
       internet = false;
       valueNotifierBook.incrementNotifier();
@@ -3186,6 +3214,7 @@ getHistoryPages(id) async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
 
       internet = false;
       valueNotifierBook.incrementNotifier();
@@ -3226,6 +3255,7 @@ getWalletHistory() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
       valueNotifierBook.incrementNotifier();
     }
   }
@@ -3260,6 +3290,7 @@ getWalletHistoryPage(page) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
       valueNotifierBook.incrementNotifier();
     }
   }
@@ -3286,6 +3317,7 @@ getClientToken() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3350,6 +3382,7 @@ addMoneyStripe(amount, nonce) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3380,6 +3413,7 @@ payMoneyStripe(nonce) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3447,6 +3481,7 @@ addMoneyPaystack(amount, nonce) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3479,6 +3514,7 @@ addMoneyFlutterwave(amount, nonce) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3511,6 +3547,7 @@ addMoneyRazorpay(amount, nonce) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3550,6 +3587,7 @@ getCfToken(money, currency) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3595,6 +3633,7 @@ cashFreePaymentSuccess() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3651,6 +3690,7 @@ updateProfile(name, email, usergender) async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3701,6 +3741,7 @@ updateProfileWithoutImage(name, email, usergender) async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3735,6 +3776,7 @@ getGeneralComplaint(type) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3765,6 +3807,7 @@ makeGeneralComplaint(complaintDesc) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3796,6 +3839,7 @@ makeRequestComplaint() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -3917,6 +3961,7 @@ userDelete() async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
       internet = false;
     }
   }
@@ -3950,6 +3995,7 @@ getnotificationHistory() async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
 
       internet = false;
       valueNotifierHome.incrementNotifier();
@@ -3984,6 +4030,7 @@ getNotificationPages(id) async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
 
       internet = false;
       valueNotifierHome.incrementNotifier();
@@ -4013,6 +4060,7 @@ deleteNotification(id) async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
 
       internet = false;
       valueNotifierHome.incrementNotifier();
@@ -4048,6 +4096,7 @@ sharewalletfun({mobile, role, amount}) async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;
@@ -4275,6 +4324,7 @@ outStationListFun() async {
   } catch (e) {
     if (e is SocketException) {
       result = 'no internet';
+      print("sangram: $e");
 
       internet = false;
       valueNotifierBook.incrementNotifier();
@@ -4312,6 +4362,7 @@ getLandingImages() async {
     if (e is SocketException) {
       internet = false;
       result = 'no internet';
+      print("sangram: $e");
     }
   }
   return result;

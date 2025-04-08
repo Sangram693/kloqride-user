@@ -983,6 +983,7 @@ class _EditProfileState extends State<EditProfile> {
                       top: 0,
                       child: NoInternet(
                         onTap: () {
+                          print("sangram");
                           setState(() {
                             internetTrue();
                           });

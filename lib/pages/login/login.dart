@@ -392,6 +392,7 @@ class _LoginState extends State<Login> with TickerProviderStateMixin {
                                 clipper: ShapePainterBottom(),
                                 child: GestureDetector(
                                   onTap: () {
+
                                     setState(() {
                                       if (showSignin == false) {
                                         showSignin = true;
@@ -450,6 +451,7 @@ class _LoginState extends State<Login> with TickerProviderStateMixin {
                                                   children: [
                                                     InkWell(
                                                         onTap: () {
+
                                                           if (signIn == 1) {
                                                             setState(() {
                                                               forgotPassword =

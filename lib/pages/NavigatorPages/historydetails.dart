@@ -1704,6 +1704,7 @@ class _HistoryDetailsState extends State<HistoryDetails> {
                     top: 0,
                     child: NoInternet(
                       onTap: () {
+                        print("sangram");
                         internetTrue();
                       },
                     ))

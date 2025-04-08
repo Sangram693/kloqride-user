@@ -286,6 +286,7 @@ class _FaqState extends State<Faq> {
                           top: 0,
                           child: NoInternet(
                             onTap: () {
+                              print("sangram");
                               setState(() {
                                 internetTrue();
                                 _isLoading = true;

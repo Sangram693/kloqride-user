@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "889691220597",
+    "firebase_url": "https://kloqride-95fac-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "kloqride-95fac",
+    "storage_bucket": "kloqride-95fac.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889691220597:android:fee68ff56b61f3f011a63c",
+        "android_client_info": {
+          "package_name": "kloqride.org.kloqride_driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG3ql3x_lkZ7zqqr2oCI0Hv89VtT_BLtI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889691220597:android:407a5aa93bb4ba1611a63c",
+        "android_client_info": {
+          "package_name": "org.kloqride.flutter_user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG3ql3x_lkZ7zqqr2oCI0Hv89VtT_BLtI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889691220597:android:80eccd574c6f598d11a63c",
+        "android_client_info": {
+          "package_name": "org.kloqride.kloqride_user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG3ql3x_lkZ7zqqr2oCI0Hv89VtT_BLtI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

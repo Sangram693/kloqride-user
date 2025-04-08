@@ -960,6 +960,7 @@ class _HistoryState extends State<History> {
                     top: 0,
                     child: NoInternet(
                       onTap: () {
+                        print("sangram");
                         setState(() {
                           internetTrue();
                         });

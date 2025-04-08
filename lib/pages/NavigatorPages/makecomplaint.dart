@@ -310,6 +310,7 @@ class _MakeComplaintState extends State<MakeComplaint> {
                       top: 0,
                       child: NoInternet(
                         onTap: () {
+                          print("sangram");
                           internetTrue();
                         },
                       ))

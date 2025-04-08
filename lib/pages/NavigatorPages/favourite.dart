@@ -379,6 +379,7 @@ class _FavoriteState extends State<Favorite> {
                       ? Positioned(
                           top: 0,
                           child: NoInternet(onTap: () {
+                            print("sangram");
                             setState(() {
                               internetTrue();
                             });
