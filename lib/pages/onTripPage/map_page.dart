@@ -61,8 +61,7 @@ bool cancelRequestByUser = false;
 bool logout = false;
 bool deleteAccount = false;
 int choosenTransportType =
-    (userDetails['enable_modules_for_applications'] == 'both' ||
-            userDetails['enable_modules_for_applications'] == 'taxi')
+    (userDetails['enable_modules_for_applications'] == 'taxi')
         ? 0
         : 1;
 String transportType = 'Taxi';

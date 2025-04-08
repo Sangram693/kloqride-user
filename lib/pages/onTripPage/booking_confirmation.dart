@@ -9203,6 +9203,7 @@ class _BookingConfirmationState extends State<BookingConfirmation>
                                                             //     true;
                                                             chooseGoodsTypes =
                                                                 true;
+                                                            print("sangram: $choosenTransportType");
                                                             isLoading = false;
                                                           });
                                                         }
